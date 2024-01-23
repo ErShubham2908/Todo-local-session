@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./sk.jpg" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Blog - JavaScript</title>
+  </head>
+  <body>
+    <header>
+      <h1>Shubham's Blog</h1>
+      <button id="new-post">Add New Post</button>
+    </header>
+
+    <main>
+      <section id="post-form" class="form hidden">
+        <h2>Add New Post</h2>
+        <form>
+          <label for="title">Title:</label> <br >
+          <input type="text" id="title" name="title" required autocomplete="true" placeholder="Enter Post Title..." /> <br/>
+
+          <label for="author">Author:</label> <br >
+          <input type="text" id="author" name="author" required autocomplete="true" placeholder="Enter Author Name..." /> <br>
+
+          <label for="content">Content:</label> <br >
+          <textarea id="content" class="text" name="content" required rows="5" cols="70" placeholder="Enter Post Contant..." ></textarea> <br >
+
+          <button type="submit">Save</button>
+          <button type="button" id="cancel">Cancel</button>
+        </form>
+      </section>
+      <section id="post-list">
+        <!-- Posts will be dynamically added here -->
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; 2024</span>
+      <span>Shubham Kumar</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
